@@ -59,5 +59,5 @@ group :test do
 end
 
 gem "groq", "~> 0.3.2"
-
 gem "dry-struct", "~> 1.7"
+gem "blueprinter", "~> 1.1"

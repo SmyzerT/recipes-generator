@@ -79,6 +79,7 @@ GEM
     benchmark (0.4.0)
     bigdecimal (3.1.9)
     bindex (0.8.1)
+    blueprinter (1.1.2)
     bootsnap (1.18.4)
       msgpack (~> 1.2)
     brakeman (7.0.0)
@@ -351,6 +352,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  blueprinter (~> 1.1)
   bootsnap
   brakeman
   capybara
