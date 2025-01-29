@@ -102,6 +102,28 @@ GEM
       reline (>= 0.3.8)
     dotenv (3.1.7)
     drb (2.2.1)
+    dry-core (1.1.0)
+      concurrent-ruby (~> 1.0)
+      logger
+      zeitwerk (~> 2.6)
+    dry-inflector (1.2.0)
+    dry-logic (1.6.0)
+      bigdecimal
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.1)
+      zeitwerk (~> 2.6)
+    dry-struct (1.7.0)
+      dry-core (~> 1.1)
+      dry-types (~> 1.8)
+      ice_nine (~> 0.11)
+      zeitwerk (~> 2.6)
+    dry-types (1.8.1)
+      bigdecimal (~> 3.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.0)
+      dry-inflector (~> 1.0)
+      dry-logic (~> 1.4)
+      zeitwerk (~> 2.6)
     erubi (1.13.1)
     event_stream_parser (1.0.0)
     faraday (2.12.2)
@@ -119,6 +141,7 @@ GEM
       json
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
+    ice_nine (0.11.2)
     importmap-rails (2.1.0)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
@@ -333,6 +356,7 @@ DEPENDENCIES
   capybara
   debug
   dotenv
+  dry-struct (~> 1.7)
   groq (~> 0.3.2)
   importmap-rails
   jbuilder
