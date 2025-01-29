@@ -7,7 +7,11 @@ module API
         recipes = cook_book_service.synthesize_recipes(ingredients_params)
         render_json(recipes, RecipeSerializer)
       rescue CookBookService::MissUsageError => err
-        render_error(error_code: "recipes_generator.miss_usage", message: err.message, status: :unprocessable_entity)
+        render_error(
+          error_code: "recipes_generator.miss_usage",
+          message: err.message,
+          status: :unprocessable_entity
+        )
       end
 
       private
