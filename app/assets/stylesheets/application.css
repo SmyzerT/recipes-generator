@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+#home-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#recipes-generator {
+     width: 600px;
+}
